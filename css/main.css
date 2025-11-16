@@ -242,7 +242,7 @@ footer > p > a{
 
 /* 内容区域 */
 .content-area {
-    width: 100%;
+    width: 125%;
     padding: 25px;
     flex: 1;
     overflow-y: auto;
@@ -348,11 +348,17 @@ footer > p > a{
 
 /* 页脚 */
 .footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
     text-align: center;
     padding: 20px;
     color: rgba(255, 255, 255, 0.7);
     font-size: 0.95rem;
-    margin-top: 20px;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
 }
 
 /* 动画效果 */
@@ -414,7 +420,7 @@ footer > p > a{
     }
     
     .content-area {
-        padding: 15px;
+        padding: 5px;
     }
     
     .card-grid {
@@ -432,5 +438,10 @@ footer > p > a{
     
     .card p {
         font-size: 0.95rem;
+    }
+    
+    .footer {
+        padding: 15px;
+        font-size: 0.9rem;
     }
 }
