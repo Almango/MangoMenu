@@ -242,7 +242,7 @@ footer > p > a{
 
 /* 内容区域 */
 .content-area {
-    width: 125%;
+    width: 120%;
     padding: 25px;
     flex: 1;
     overflow-y: auto;
@@ -408,15 +408,19 @@ footer > p > a{
     }
     
     .nav-menu {
-        flex-direction: column;
-        gap: 12px;
+        flex-direction: row;
+        justify-content: center;
+        gap: 8px;
         padding: 15px;
+        flex-wrap: wrap;
     }
     
     .nav-link {
         text-align: center;
-        width: 100%;
-        padding: 15px 20px;
+        padding: 12px 16px;
+        font-size: 1rem;
+        flex: 1;
+        min-width: 80px;
     }
     
     .content-area {
@@ -443,5 +447,9 @@ footer > p > a{
     .footer {
         padding: 15px;
         font-size: 0.9rem;
+    }
+    
+    .main-block {
+        padding-bottom: 80px;
     }
 }
